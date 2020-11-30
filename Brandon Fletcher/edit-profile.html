@@ -32,6 +32,17 @@ body {
   color: white;
 }
 
+.profileDetails {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 3px;
+  padding-bottom: 28px;
+}
+
 #editProfile {
   float: right;
   color: #f2f2f2;
@@ -40,6 +51,8 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
+
+
 </style>
 </head>
 <body>
@@ -49,8 +62,21 @@ body {
   <a id="editProfile" href="index.html">Edit Profile</a>
 </div>
 
-<div style="padding-left:16px">
-  <h2>Profile Details</h2>
+<div class="profileDetails">
+  <h1>Edit Profile Form</h1>
+  <div class="sc-container">
+    <input type="text" placeholder="Username" />
+    <br>
+    <input type="text" placeholder="Street" />
+    <br>
+    <input type="text" placeholder="State" />
+    <br>
+    <input type="text" placeholder="Zip Code" />
+    <br>
+    <input type="file" id="myFile" name="filename">
+    <br>
+    <input type="submit" value="Submit">
+  </div>
 </div>
 
 </body>
