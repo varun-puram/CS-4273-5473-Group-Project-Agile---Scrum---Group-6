@@ -37,6 +37,8 @@ background-color: #C0C0C0;
   width: 65%;
 }
 
-td * {
+#reviewTable td {
   word-wrap: break-word;
+  text-align: left;
+  padding: 12px;
 }

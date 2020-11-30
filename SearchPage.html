@@ -42,7 +42,7 @@
         <tr>
           <td>Nick's Nonchalant Nuggets</td>
           <td>5</td>
-          <td>Incredible! Beat's McDonald's for sure!</td>
+          <td>Incredible! Beats McDonald's for sure!</td>
         </tr>
         <tr>
           <td>Carly's Competent Cereal</td>
@@ -56,4 +56,27 @@
         </tr>
       </table>
   </body>
+  <script>
+  function reviewSearch() {
+    var input, filter, table, row, data, i, searchValue;
+    input = document.getElementById("searchBar");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("reviewTable");
+    row = table.getElementsByTagName("tr");
+
+    //Looping through all of our table rows and hiding those that don't match the search!
+    for(i=0; i < row.length; i++){
+      data = row[i].getElementsByTagName("td")[0];
+      if (data) {
+        searchValue = data.textContent || td.innerText;
+        if (searchValue.toUpperCase().indexOf(filter) > -1) {
+          row[i].style.display = "";
+        }
+        else{
+          row[i].style.display = "none";
+        }
+      }
+    }
+  }
+</script>
 </html>
