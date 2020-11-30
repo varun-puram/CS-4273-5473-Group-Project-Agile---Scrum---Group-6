@@ -59,7 +59,6 @@ body {
 
 <div class="topnav">
   <a class="active" href="home.html">Home</a>
-  <a id="editProfile" href="index.html">Edit Profile</a>
 </div>
 
 <!-- Information for Sending Data: https://www.android-examples.com/send-receive-html-form-data-from-one-page-to-another-using-php/ -->
@@ -84,12 +83,15 @@ body {
 -->
 
 <table class="profileDetails">
-<form action="receiving-data.php" method="post">
+<form action="changed-profile.php" method="post">
 <tr>
 <td> Username: </td><td><input type="text" name="username"></td>
 </tr>
 <tr>
 <td> Street: </td><td><input type="text" name="street"></td>
+<tr>
+<td> City: </td><td><input type="text" name="city"></td>
+</tr>
 <tr>
 <td> State: </td><td><input type="text" name="state"></td>
 </tr>

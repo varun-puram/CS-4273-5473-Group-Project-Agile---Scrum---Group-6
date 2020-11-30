@@ -32,26 +32,41 @@ body {
   color: white;
 }
 
-#editProfile {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.profileDetails {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 3px;
+  padding-bottom: 28px;
 }
+
+
 </style>
 </head>
 <body>
 
 <div class="topnav">
   <a class="active" href="home.html">Home</a>
-  <a id="editProfile" href="edit-profile.php">Edit Profile</a>
 </div>
 
-<div style="padding-left:16px">
-  <h2>Profile Details</h2>
-</div>
+<div class="profileDetails">
+<!--Receiving Username-->
+<h3>Username is <?php echo $_POST["username"]; ?></h4></br>
 
+<!--//Receiving Street-->
+<h3>Street: <?php echo $_POST["street"]; ?></h3>
+
+<!--//Receiving City-->
+<h3>City: <?php echo $_POST["city"]; ?></h3>
+
+<!--//Receiving State-->
+<h3>State: <?php echo $_POST["state"]; ?></h3>
+
+<!--//Receiving Zip Code-->
+<h3>Zip Code: <?php echo $_POST["zipcode"]; ?></h3>
+</div>
 </body>
 </html>
