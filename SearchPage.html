@@ -5,6 +5,55 @@
     <title> Reviews </title>
   </head>
   <body>
-    <h1> Initial Commit! Let's get to work... </h1>
+    <h1 id="reviewHeader" class="rightText"> Reviews </h1>
+    <input type="text" id="searchBar" onkeyup="reviewSearch()" placeholder="Search reviews by restaurant...">
+    <h2 id="recentReviewHeader">Recent Reviews</h2>
+    <table id="reviewTable" style ="width: 100%">
+      <colgroup id="colGroup">
+        <col id="restCol" span="1">
+        <col id="scoreCol" span="1">
+        <col id="contentCol" span="1">
+      </colgroup>
+      <tr>
+        <tr>
+          <th align="left">Restaurant</th>
+          <th align="left">Score</th>
+          <th align="left">Content</th>
+        </tr>
+        <tr>
+          <td>Peter's Pizza Palace</td>
+          <td>4</td>
+          <td>Pretty great experience! The only complaint I had was that the food took a bit long. Even so, they were very apologetic when this happened. Great otherwise!</td>
+        </tr>
+        <tr>
+          <td>Bob's Brilliant Burger House</td>
+          <td>5</td>
+          <td>Absolutely no complaints! Excellent service and food</td>
+        <tr>
+          <td>Luke's Fake Restaurant</td>
+          <td>0</td>
+          <td>The restaurant doesn't exist... so can't really review it can I?</td>
+        </tr>
+        <tr>
+          <td>Marley's Magnificent Mangos</td>
+          <td>3</td>
+          <td>Good but not great... I've definitely had better</td>
+        </tr>
+        <tr>
+          <td>Nick's Nonchalant Nuggets</td>
+          <td>5</td>
+          <td>Incredible! Beat's McDonald's for sure!</td>
+        </tr>
+        <tr>
+          <td>Carly's Competent Cereal</td>
+          <td>3</td>
+          <td>It's in the name, and is why my review is mid-tier... competent.</td>
+        </tr>
+        <tr>
+          <td>Quentin's Quiet Quail</td>
+          <td>4</td>
+          <td>Quiet? More like quietly good! This quail really hit the spot, and more people definitely need to check it out.</td>
+        </tr>
+      </table>
   </body>
 </html>

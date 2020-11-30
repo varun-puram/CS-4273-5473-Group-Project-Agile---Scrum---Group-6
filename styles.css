@@ -1,3 +1,42 @@
 body{
-background-color: #dddddd;
+background-color: #C0C0C0;
+}
+
+#reviewHeader{
+  font-size: 45px;
+  font-family: Brush Script MT, cursive;
+  color: #ffffff;
+}
+
+#searchBar{
+  width: 40%;
+  font-size: 16px;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 20px;
+}
+
+#recentReviewHeader{
+  margin-bottom: 20px;
+}
+
+#reviewTable{
+  width: 100%;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+#restCol{
+  width: 25%;
+}
+
+#scoreCol{
+  width: 10%
+}
+
+#contentCol{
+  width: 65%;
+}
+
+td * {
+  word-wrap: break-word;
 }
